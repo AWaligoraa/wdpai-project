@@ -6,9 +6,28 @@
     <title><?= htmlspecialchars($pageTitle) ?></title>
 </head>
 <body>
+    <header>
+        <p>Grań</p>
+        <nav>
+            <ul>
+                <li><a href="/">Strona główna</a></li>
+                <li><a href="/trails">Szlaki</a></li>
+                <li><a href="/trails/new">Dodaj szlak</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <h1>Strona główna</h1>
-        <a href="/projects">Zobacz projekty</a>
+        <h1>Znajdź szlak, który naprawdę dasz radę przejść</h1>
+        <p>
+            Filtruj szlaki w Tatrach po ekspozycji, trudności, kondycji,
+            długości, przewyższeniu i schroniskach.
+        </p>
+        <p><a href="/trails">Przeglądaj szlaki</a></p>
     </main>
+
+    <footer>
+        <p>Grań</p>
+    </footer>
 </body>
 </html>
