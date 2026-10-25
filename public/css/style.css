@@ -84,6 +84,77 @@ body {
   border-radius: var(--radius);
 }
 
+section.card {
+  margin: 0 var(--space-3) var(--space-3);
+}
+
 .site-footer {
   color: var(--color-muted);
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+main section {
+  padding: 0 var(--space-3) var(--space-3);
+}
+
+.card-grid {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.banner {
+  margin: 0 var(--space-3) var(--space-3);
+  padding: var(--space-3);
+  color: var(--color-surface);
+  background: var(--color-brand);
+  border-radius: var(--radius);
+}
+
+.banner h2 {
+  margin-top: 0;
+  color: var(--color-surface);
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero-copy,
+  .hero-media {
+    flex: 1;
+  }
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.button:hover {
+  background: var(--color-brand);
+}
+.button:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 3px;
 }
