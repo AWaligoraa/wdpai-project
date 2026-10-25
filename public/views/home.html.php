@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        <p>Grań</p>
+    <header class="site-header">
+        <p class="logo">Grań</p>
         <nav>
-            <ul>
+            <ul class="nav-list">
                 <li><a href="/">Strona główna</a></li>
                 <li><a href="/trails">Szlaki</a></li>
                 <li><a href="/trails/new">Dodaj szlak</a></li>
@@ -18,16 +18,16 @@
         </nav>
     </header>
 
-    <main>
+    <main class="hero">
         <h1>Znajdź szlak, który naprawdę dasz radę przejść</h1>
         <p>
             Filtruj szlaki w Tatrach po ekspozycji, trudności, kondycji,
             długości, przewyższeniu i schroniskach.
         </p>
-        <p><a href="/trails">Przeglądaj szlaki</a></p>
+        <p><a class="button" href="/trails">Przeglądaj szlaki</a></p>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>Grań</p>
     </footer>
 </body>
