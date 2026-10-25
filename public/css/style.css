@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-brand: #1f3d32;
+  --color-accent: #c4502a;
+  --color-text: #1c1917;
+  --color-muted: #6b6259;
+  --color-surface: #ffffff;
+  --color-background: #f4f1ea;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --radius: 1rem;
+}
+
+[data-theme="dark"] {
+  --color-text: #f7f9fc;
+  --color-muted: #b6c0cf;
+  --color-surface: #202938;
+  --color-background: #111827;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+}
