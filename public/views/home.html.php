@@ -7,16 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header class="site-header">
-        <p class="logo">Grań</p>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="/trails">Szlaki</a></li>
-                <li><a href="#o-aplikacji">O aplikacji</a></li>
-            </ul>
-        </nav>
-        <a class="button" href="#logowanie">Zaloguj</a>
-    </header>
+    <?php require __DIR__ . '/nav.html.php'; ?>
 
     <main>
         <section class="hero">

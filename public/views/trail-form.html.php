@@ -4,18 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($pageTitle) ?></title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        <p>Grań</p>
-        <nav>
-            <ul>
-                <li><a href="/">Strona główna</a></li>
-                <li><a href="/trails">Szlaki</a></li>
-                <li><a href="/trails/new">Dodaj szlak</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php require __DIR__ . '/nav.html.php'; ?>
 
     <main>
         <h1>Dodaj szlak</h1>
