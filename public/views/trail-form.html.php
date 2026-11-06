@@ -1,15 +1,4 @@
-<!doctype html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= htmlspecialchars($pageTitle) ?></title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <?php require __DIR__ . '/nav.html.php'; ?>
-
-    <main>
+<main>
         <h1>Dodaj szlak</h1>
 
         <form method="get" action="/trails/new">
@@ -66,5 +55,3 @@
     <footer>
         <p>Grań</p>
     </footer>
-</body>
-</html>
