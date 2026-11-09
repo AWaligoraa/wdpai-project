@@ -15,7 +15,6 @@ Aktualnie aplikacja obsługuje:
 - formularz dodawania szlaku pod `/trails/new` (bez zapisu),
 - szczegóły szlaku pod `/trails/{id}`,
 - szczegóły cruxu pod `/trails/{id}/cruxes/{cruxId}`,
-- laboratoryjne trasy `/projects` i `/projects/{id}`,
 - odpowiedź 404 dla nieznanych tras.
 
 ## Stack technologiczny
@@ -92,7 +91,6 @@ Kontrolery znajdują się w `src/controllers/`, używają przestrzeni nazw `App\
 - `DefaultController` obsługuje stronę główną i 404.
 - `TrailController` obsługuje listę, formularz i szczegóły szlaku.
 - `CruxController` obsługuje szczegóły cruxu.
-- `ProjectController` to trasa z laboratorium i nie jest częścią Grań.
 
 Zadaniem kontrolera jest odebranie danych, przygotowanie ich dla widoku i wybranie szablonu przez `$this->render()`. Kontroler powinien być cienki. Nie umieszczaj w nim rozbudowanych zapytań do bazy, HTML ani stylów.
 

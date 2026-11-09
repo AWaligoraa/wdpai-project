@@ -30,6 +30,10 @@
 <body>
     <?php require __DIR__ . '/nav.html.php'; ?>
     <?= $content ?>
+    <footer class="site-footer">
+        <p class="logo">Grań</p>
+        <p>Szlaki, cruxy i schroniska w polskich Tatrach.</p>
+    </footer>
     <script src="/js/theme.js" defer></script>
 </body>
 </html>
