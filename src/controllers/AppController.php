@@ -22,4 +22,14 @@ abstract class AppController
 
         require dirname(__DIR__, 2) . '/public/views/layout.html.php';
     }
+
+    protected function isGet(): bool
+    {
+        return ($_SERVER['REQUEST_METHOD'] ?? '') === 'GET';
+    }
+
+    protected function isPost(): bool
+    {
+        return ($_SERVER['REQUEST_METHOD'] ?? '') === 'POST';
+    }
 }

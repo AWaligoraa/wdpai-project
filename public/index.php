@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Controller\DefaultController;
+use App\Controller\SecurityController;
 use App\Controller\TrailController;
 use App\Controller\CruxController;
 use App\Routing;
@@ -12,6 +13,10 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 $routing = new Routing();
 
 $routing->get('/', DefaultController::class, 'index');
+$routing->get('/login', SecurityController::class, 'login');
+$routing->post('/login', SecurityController::class, 'login');
+$routing->get('/register', SecurityController::class, 'register');
+$routing->post('/register', SecurityController::class, 'register');
 $routing->get('/trails', TrailController::class, 'index');
 $routing->get('/trails/new', TrailController::class, 'create');
 $routing->get('/trails/{id}/cruxes/{cruxId}', CruxController::class, 'showCrux');
